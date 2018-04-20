@@ -1,3 +1,3 @@
-FROM httpd:2.4
+FROM debian:latest 
 
-RUN  apt-get update && apt-get install -y build-essentials
+RUN  apt-get update && apt-get install -y build-essential
