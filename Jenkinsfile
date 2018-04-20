@@ -23,7 +23,7 @@ pipeline {
                            For more details see ${env.BUILD_URL}.
                            Yours sincerely
                            Jenkins""".stripIndent(),
-                     recipientProviders: [[$class: 'CulpritsRecipientProvider']]
+                     recipientProviders:  [culprits(), developers()]
         }
     }
 }
